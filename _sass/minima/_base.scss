@@ -6,9 +6,18 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
+  color: red;
+  font-family:cursive;
+  
 }
 
-
+h3{
+  
+  text-align: center;
+  background-color: rgba(129, 122, 112, 0.938);
+  border-radius: 20px;
+  border: rgba(14, 13, 13, 0.61) solid 5px;
+}
 
 /**
  * Basic styling
@@ -26,6 +35,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  
 }
 
 
@@ -46,8 +56,10 @@ ul, ol, dl, figure,
  * `main` element
  */
 main {
+
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
+
 
 
 
@@ -66,6 +78,7 @@ img {
  */
 figure > img {
   display: block;
+  
 }
 
 figcaption {
@@ -93,8 +106,9 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6  {
   font-weight: $base-font-weight;
+  
 }
 
 
@@ -107,11 +121,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color:black;
   }
 
   &:hover {
-    color: $text-color;
+    color: rgb(0, 174, 255);
     text-decoration: underline;
   }
 
@@ -229,6 +243,7 @@ pre {
  * Tables
  */
 table {
+  
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
